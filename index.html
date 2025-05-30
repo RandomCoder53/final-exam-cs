@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Micro+5&display=swap" rel="stylesheet">
+        <link href="/style.css" rel="stylesheet">
+        
+        <title id="TITLE"></title>
+
+    </head>
+    <body>
+        <div id="startingdiv">
+        <h4 id="codetext1"></h4>
+        <h5 id="codetext2"></h5>
+        <h6 class="basic" id="loading"></h6>
+        <h6 class="basic" id="loading2"></h6>
+        <a href="/home.html" id="startbutton">&gt;continue</a>
+        <script>
+            let text1 = "Computer Science"
+            let text2 = "Final Exam Portfolio"
+            function buttonshowup() {
+                document.getElementById("codetext2").innerHTML = text2;
+                setTimeout(() => { document.getElementById("loading").innerHTML = "&gt;loading"; }, 500);
+                setTimeout(() => { document.getElementById("loading").innerHTML = "&gt;loading."; }, 900);
+                setTimeout(() => { document.getElementById("loading").innerHTML = "&gt;loading.."; }, 1300);
+                setTimeout(() => { document.getElementById("loading").innerHTML = "&gt;loading..."; }, 1700);
+                setTimeout(() => { document.getElementById("loading").innerHTML = "&gt;loading"; }, 2100);
+                setTimeout(() => { document.getElementById("loading").innerHTML = "&gt;loading."; }, 2600);
+                setTimeout(() => { document.getElementById("loading").innerHTML = "&gt;loading.."; }, 3000);
+
+                setTimeout(() => { document.getElementById("loading").innerHTML = "&gt;loading"; }, 3400);
+                setTimeout(() => { document.getElementById("loading2").innerHTML = "&gt;retrieving file path"; }, 3400);
+                setTimeout(() => { document.getElementById("startbutton").style.visibility = "visible"; }, 5700);
+            }
+            function continuenext() {
+                document.getElementById("codetext1").innerHTML = text1
+                for (let i = 0; i <= text2.length; i++) {
+                    setTimeout(() => { document.getElementById("codetext2").innerHTML = text2.slice(0, i)+"_"; }, i * 90);
+                    setTimeout(() => { buttonshowup(); }, 1800);
+                }
+            }
+            for (let i = 0; i <= text1.length; i++) {
+                setTimeout(() => { document.getElementById("codetext1").innerHTML = text1.slice(0, i)+"_"; }, i * 90);
+                setTimeout(() => { continuenext(); }, 1600);
+            }
+            
+        </script>
+        <script>
+            change1() 
+            function change1() {
+                document.getElementById("TITLE").innerHTML = "Waiting";
+                setTimeout(() => { change2(); }, 500);
+            }
+            function change2() {
+                document.getElementById("TITLE").innerHTML = "Waiting.";
+                setTimeout(() => { change3(); }, 500);
+            }
+            function change3() {
+                document.getElementById("TITLE").innerHTML = "Waiting..";
+                setTimeout(() => { change4(); }, 500);
+            }
+            function change4() {
+                document.getElementById("TITLE").innerHTML = "Waiting...";
+                setTimeout(() => { change1(); }, 500);
+            }
+        </script>
+        </div>
+    </body>
+</html>

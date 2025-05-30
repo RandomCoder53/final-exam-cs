@@ -1,0 +1,74 @@
+
+#codetext2 {
+    font-family: "Jersey 10", sans-serif;
+    color: rgb(0, 255, 0);
+    font-size: 300%;
+    line-height: 30px;
+}
+#codetext1 {
+    font-family: "Jersey 10", sans-serif;
+    color: rgb(0, 255, 0);
+    font-size: 400%;
+    line-height: 30px;
+}
+
+.header {
+    font-family: "Jersey 10", sans-serif;
+    color: rgb(0, 255, 0);
+    font-size: 300%;
+    line-height: 5px;
+}
+.basic {
+    font-family: "Jersey 10", sans-serif;
+    color: rgb(0, 174, 0);
+    font-size: 250%;
+    line-height: 5px;
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+#startbutton {
+    visibility: hidden;
+    font-family: "Jersey 10", sans-serif;
+    color: rgb(0, 240, 0);
+    background-color: rgb(0, 75, 0);
+    border: none;
+    background: none;
+    width: 250px;
+    height: 60px;
+    font-size: 350%;
+    text-align: left;
+    text-decoration: none;
+    transition-timing-function: ease-out;
+    transition: 0.3s;
+}
+
+#startbutton:hover {
+    color: rgb(255, 255, 255);
+    font-size: 380%;
+    transition-timing-function: ease-out;
+    transition: 0.3s;
+}
+#startingdiv {
+    line-height: 2px;
+}
+.basicbutton {
+    font-family: "Jersey 10", sans-serif;
+    color: rgb(0, 240, 0);
+    background-color: rgb(0, 75, 0);
+    border: none;
+    background: none;
+    width: 250px;
+    height: 60px;
+    font-size: 280%;
+    text-align: left;
+    text-decoration: none;
+    transition-timing-function: ease-out;
+    transition: 0.3s;
+}
+.basicbutton:hover {
+    color: rgb(255, 255, 255);
+    font-size: 320%;
+    transition-timing-function: ease-out;
+    transition: 0.3s;
+}
