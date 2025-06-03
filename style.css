@@ -11,21 +11,39 @@
     font-size: 400%;
     line-height: 30px;
 }
-
+#cooldiv {
+    width: 40%;
+}
 .header {
     font-family: "Jersey 10", sans-serif;
     color: rgb(0, 255, 0);
     font-size: 300%;
     line-height: 5px;
 }
+.top {
+    font-family: "Jersey 10", sans-serif;
+    color: rgb(0, 220, 0);
+    font-size: 200%;
+    line-height: 5px;
+}
 .basic {
     font-family: "Jersey 10", sans-serif;
     color: rgb(0, 174, 0);
     font-size: 250%;
+}
+.big {
+    font-family: "Jersey 10", sans-serif;
+    color: rgb(0, 255, 0);
+    font-size: 270%;
     line-height: 5px;
+
 }
 body {
     background-color: rgb(0, 0, 0);
+}
+img {
+    border: 5px solid #00ff15;
+    border-radius: 22px 22px 22px 22px;
 }
 #startbutton {
     visibility: hidden;
